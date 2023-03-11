@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    font: size 16px; 
+    line-height: 1.5;
+
+    background-color: yellowgreen;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+p {
+    margin: 0 0 5px;
+}
