@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     font: size 16px; 
     line-height: 1.5;
+    color:aliceblue;
 
     background-color: yellowgreen;
 }
@@ -14,4 +15,4 @@ body {
 
 p {
     margin: 0 0 5px;
-}55
+}
