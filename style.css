@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    font: size 16px; 
+    line-height: 1.5;
+    color:aliceblue;
+
+    background-color: yellowgreen;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+p {
+    margin: 0 0 5px;
+}
+
+
+/*Faq*/
+.faq {
+    max-width: 500px;
+    margin: 150px auto;
+}
+
+.faq-item {
+   
+
+    border: 1px solid blue;
+}
+
+.faq-titel{
+    display:block;
+    padding: 10px 15px;
+    position: relative;
+    
+    cursor: pointer;
+
+    transition-delay: .1s;
+    transition-duration: .5s;
+}
+
+.faq-titel:after {
+    content: "";
+    display: block;
+        border-style: solid;
+        border-width: 10px 5px 0 5px;
+        border-color:aliceblue transparent transparent;
+position: absolute;
+top: 50%;
+right: 15px;
+
+transform: translateY(-50%);
+}
+
+.faq-titel:hover{
+    background-color:blue;
+}
+
+
+.faq-input{
+    width: 0;
+    height: 0;
+
+    appearance: none;
+
+    position: absolute;
+}
+
+.faq-input:checked ~ .faq-titel
+{
+    background-color:blue;
+}
+
+.faq-input:checked ~ .faq-titel:after {
+    border-style: solid;
+border-width: 0 5px 10px 5px;
+border-color: transparent transparent aliceblue transparent;
+}
+
+
+.faq-input:checked ~ .faq-text
+{
+    display: block;
+}
+
+
+
+.faq-text {
+    display: none;
+    padding: 10px 15px;
+
+    color:black;
+    font-size: 14px;
+}
